@@ -2,7 +2,7 @@
 Repository for distribution of Munipack via Flatpak. 
 
 **What is Flatpak?**
-Flatpak is a universal package management system that bundles the application with all its necessary dependencies (like specific versions of system libraries) inside a secure sandbox. This ensures Munipack runs flawlessly on any Linux distribution without library conflicts or "missing dependency" errors.
+Flatpak is a universal package management system that bundles the application with all its necessary dependencies (like specific versions of system libraries) inside a secure sandbox. This ensures Munipack runs on any Linux distribution without library conflicts or "missing dependency" errors.
 
 
 ## Prerequisites

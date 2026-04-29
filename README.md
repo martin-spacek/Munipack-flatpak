@@ -4,6 +4,10 @@ Repository for distribution of Munipack via Flatpak.
 **What is Flatpak?**
 Flatpak is a universal package management system that bundles the application with all its necessary dependencies (like specific versions of system libraries) inside a secure sandbox. This ensures Munipack runs on any Linux distribution without library conflicts or "missing dependency" errors.
 
+> [!WARNING]
+> The app id is going to change to `cz.muni.physics.munipack` soon, so if you later reinstall or update Munipack-flatpak, you will have to update the aliases in your .bashrc if you set them now.
+> 
+> Automatic creation of a desktop entry for the file browser will be added soon.
 
 ## Prerequisites
 Ensure you have Flatpak installed on your system. You also need to enable the official Flathub repository, as Munipack relies on its base runtime to function:

@@ -50,19 +50,19 @@ flatpak run --command=munipack cz.muni.physics.munipack.xmunipack dark image.fit
 
 If you'd like to use the commands exactly as they are written in the official [Munipack guide](https://munipack.physics.muni.cz/guide.html), you need to add these aliases to your .bashrc:
 
-- Open your .bashrc with your preferred editor, e.g.:
+1. Open your .bashrc with your preferred editor, e.g.:
     ```bash
     nano ~/.bashrc
     ```
 
-- Add these lines to the end of the file:
+2. Add these lines to the end of the file:
     ```
     # Aliases for Munipack-flatpak
     alias xmunipack='flatpak run --command=xmunipack cz.muni.physics.munipack.xmunipack'
     alias munipack='flatpak run --command=munipack cz.muni.physics.munipack.xmunipack'
     ```
     
-- Load the updated .bashrc file with:
+3. Load the updated .bashrc file with:
     ```bash
     source ~/.bashrc
     ```

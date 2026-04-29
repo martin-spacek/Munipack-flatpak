@@ -12,12 +12,12 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 ```
 
 ## Installation
-Download the bundle Download cz.muni.physics.munipack.flatpak from the build folder, or directly via CLI:
+Download the `cz.muni.physics.munipack.flatpak` file from the [build folder](https://github.com/martin-spacek/Munipack-flatpak/tree/main/build), or directly via CLI:
 ```bash
 wget https://github.com/martin-spacek/Munipack-flatpak/raw/main/build/cz.muni.physics.munipack.flatpak
 ```
 
-Install Install the downloaded Flatpak bundle from the directory where it is located:
+Install Install the downloaded Flatpak from the directory where it is located:
 ```bash
 flatpak install --user cz.muni.physics.munipack.flatpak
 ```

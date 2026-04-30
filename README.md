@@ -16,11 +16,11 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 ```
 
 ## Installation
-You can install the latest Munipack Flatpak bundle by running the following command in your terminal:
+You can download the latest Munipack Flatpak bundle manually from the [releases tab](https://github.com/martin-spacek/Munipack-flatpak/releases) or by running the following command in your terminal:
 ```bash
-flatpak install --user https://github.com/martin-spacek/Munipack-flatpak/releases/latest/download/cz.muni.physics.munipack.flatpak
+wget https://github.com/martin-spacek/Munipack-flatpak/releases/latest/download/cz.muni.physics.munipack.flatpak
 ```
-or by manually downloading the bundle from the releases tab and running the following command from the directory where it is located:
+To install the bundle, run the following command from the directory where the file is located:
 ```bash
 flatpak install --user cz.muni.physics.munipack.flatpak
 ```

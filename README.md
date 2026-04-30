@@ -16,15 +16,15 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 ```
 
 ## Installation
-Download the `cz.muni.physics.munipack.flatpak` bundle from the [build folder](https://github.com/martin-spacek/Munipack-flatpak/tree/main/build), or directly via CLI:
+You can install the latest Munipack Flatpak bundle by running the following command in your terminal:
 ```bash
-wget https://github.com/martin-spacek/Munipack-flatpak/raw/main/build/cz.muni.physics.munipack.flatpak
+flatpak install --user [https://github.com/martin-spacek/Munipack-flatpak/releases/latest/download/cz.muni.physics.munipack.flatpak](https://github.com/martin-spacek/Munipack-flatpak/releases/latest/download/cz.muni.physics.munipack.flatpak)
 ```
-
-Install the downloaded Flatpak bundle from the directory where it is located:
+or by manually downloading the bundle from releases and running the foollowing command from the directory where it is located:
 ```bash
 flatpak install --user cz.muni.physics.munipack.flatpak
 ```
+
 > [!NOTE]
 > Munipack Flatpak only has permission to access your home folder by default. You can change these sandbox permissions using the `flatpak override` command or via a GUI tool like Flatseal.
 

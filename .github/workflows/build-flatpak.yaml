@@ -1,27 +1,25 @@
 name: Build Flatpak bundle
-
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
-
 jobs:
   flatpak-build:
     name: Build Flatpak Bundle
     runs-on: ubuntu-latest
-
+    container:
+      image: registry.gitlab.gnome.org/gnome/gnome-runtime-images/gnome:45
+      options: --privileged
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Build Flatpak
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: cz.muni.physics.munipack.flatpak
           manifest-path: cz.muni.physics.munipack.yaml
-
       - name: Upload Bundle
         uses: actions/upload-artifact@v4
         with:

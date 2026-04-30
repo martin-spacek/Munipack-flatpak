@@ -10,7 +10,7 @@ jobs:
     name: Build Flatpak Bundle
     runs-on: ubuntu-latest
     container:
-      image: registry.gitlab.gnome.org/gnome/gnome-runtime-images/gnome:45
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-45
       options: --privileged
     steps:
       - name: Checkout code

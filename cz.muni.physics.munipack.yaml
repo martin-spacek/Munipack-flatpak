@@ -1,6 +1,6 @@
 app-id: cz.muni.physics.munipack
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: xmunipack
 finish-args:
@@ -12,7 +12,7 @@ finish-args:
   # Internet access for Virtual Observatory
   - --share=network
   # File access to open FITS images
-  - --filesystem=home
+  - --filesystem=host
 
 modules:
   # Follows Munipack build instructions from https://munipack.physics.muni.cz/SourceInstallation.html 
